@@ -1,0 +1,138 @@
+\documentclass[20pt]{beamer}
+
+\usetheme{metropolis}
+
+\usefonttheme[onlymath]{serif}
+
+\usepackage{listings}
+
+\usepackage{multicol}
+
+
+\usepackage{tikz-cd}
+\usepackage{graphbox}
+\usepackage{tikz}
+\usepackage[tikz]{bclogo}
+\usepackage{fontawesome5}
+\usepackage{pgfplots}
+
+\usepackage[all]{xy}
+
+\usepackage{subfigure}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bigints}
+
+\usepackage{diagbox}
+
+\usepackage{geometry}
+% 1920x1080 px
+\geometry{
+    papersize={1920pt,1080pt},
+    left=25pt,
+    right=25pt,
+    top=25pt,
+    bottom=25pt
+}
+
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+\tikzset{square arrow/.style={to path={-- ++(0,-.25) -| (\tikztotarget)}}}
+
+
+\date{}
+
+\author{İsmet Karadağ \\ Furkan Özel}
+\institute{Université Galatasaray, INF 353}
+
+\setbeamertemplate{title page}{
+    \begin{center}
+        \vspace{2cm}
+        \usebeamerfont{title}\Huge\inserttitle\par
+        \usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par
+        \vspace{1cm}
+        \usebeamerfont{author}\insertauthor\par
+        \usebeamerfont{institute}\insertinstitute\par
+        \vfill
+        \usebeamerfont{date}\insertdate\par        
+    \end{center}
+}
+
+
+\begin{document}
+
+\begin{frame}[plain]
+    % Insert image
+    \begin{center}
+        \includegraphics[width=0.3\textwidth]{7tst.png}    
+    \end{center}
+    \maketitle
+\end{frame}
+
+\begin{frame}{İçerik}
+    \begin{multicols}{2}
+        \tableofcontents
+    \end{multicols}
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}
+    \frametitle{7Taste !? C'est quoi ?}
+        7Taste, c'est un site web qui fournit de trouver des chansons selon les goûts de l'utilisateur. On developpe ce site web pour le projet de INF 353.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Plan}
+    \begin{center}
+        \begin{tabular}{|c|p{15cm}|p{15cm}|}
+            \hline
+            \textbf{Semaine} & \textbf{Tâches} & \textbf{Description} \\
+            \hline
+            Semaine 1 & - Déterminer le sujet du projet. & - Commencer à travailler sur le projet. \\
+            \hline
+            Semaine 2 & - Définir les détails de conception du projet. & - Configuration de l'authentification pour l'API Spotify. \\
+            \hline
+            Semaine 3 & - Création de la base de données. & - Conception de l'interface utilisateur en utilisant Bootstrap et développement du prototype. \\ & - Configuration de l'environnement .NET Core 8. \\
+            \hline
+            Semaine 4-7 & - Ajout de fonctionnalités à l'interface utilisateur. & - Commencer à travailler sur l'algorithme de recommandation. \\
+            \hline
+            Semaine 8 & - Affichage des profils d'artistes et de leurs détails. & - Configuration de la base de données MySQL et création des tables requises. \\ & - Ajout d'une fonctionnalité permettant aux utilisateurs de sauvegarder leurs chansons et listes de lecture préférées. \\
+            \hline
+            Semaine 9-13 & - Tester le site web et corriger les erreurs. & - Ajouter des fonctionnalités supplémentaires. \\
+            \hline
+            Semaine 14 & - Préparation de la présentation finale. & - Mise en ligne du site web. \\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{frame}
+
+\section{Conception}
+
+\begin{frame}
+    \frametitle{Comment ça se passe avec .Net?}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{l'Algorithme de Recommandation}
+        L'algorithme de recommandation est un domaine de recherche en informatique et en apprentissage automatique qui vise à suggérer des éléments pertinents à un utilisateur, en se basant généralement sur ses préférences et son comportement antérieur. Voici quelques informations académiques importantes concernant les algorithmes de recommandation :
+        Types d'algorithmes de recommandation :
+        \begin{itemize}
+            \item Filtrage collaboratif : Ces algorithmes recommandent des éléments en se basant sur le comportement et les préférences d'autres utilisateurs similaires. Il existe deux types de filtrage collaboratif : basé sur l'utilisateur et basé sur l'élément.
+            \item Filtrage basé sur le contenu : Ces algorithmes recommandent des éléments similaires à ceux que l'utilisateur a déjà aimés, en se basant sur des caractéristiques explicites des éléments et des préférences de l'utilisateur.
+            \item Méthodes hybrides : Ces méthodes combinent plusieurs approches pour améliorer la qualité des recommandations.
+        \end{itemize}
+\end{frame}
+
+\section{External Links}
+
+\begin{frame}
+    \frametitle{External Links}
+    \begin{itemize}
+        \item  
+    \end{itemize}
+\end{frame}
+
+\end{document}
